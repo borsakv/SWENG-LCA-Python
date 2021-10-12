@@ -67,26 +67,3 @@ def findLCA(root, n1, n2):
             break
         i += 1
     return path1[i-1]
-
-root = Node(40)
-root.insert(20)
-root.insert(10)
-root.insert(30)
-root.insert(60)
-root.insert(50)
-root.insert(70)
-root.insert(5)
-root.insert(45)
-root.insert(55) 
-"""
-                 40
-                 /      \
-                20       60
-               /  \     /  \
-              10   30  50   70
-             /          \
-            5            55
-
-"""
-
-print("Lowest Common Ancestor of 5 and 30 is %d" %(findLCA(root,5, 30)))
