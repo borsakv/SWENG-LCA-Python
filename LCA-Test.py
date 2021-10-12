@@ -49,6 +49,7 @@ class TestLCA(unittest.TestCase):
     def testLCATrue(self):
         # Asserting LCA using two real nodes in the tree
         self.assertEquals(findLCA(self.root, 5, 30), 20)
+        self.assertEquals(findLCA(self.root, 55, 70), 60)
 
     def testLCAFake(self):
         # Asserting LCA using two fake nodes in the tree
